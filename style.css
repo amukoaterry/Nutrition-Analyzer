@@ -1,0 +1,252 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .landingpage {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .landingpage-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .text-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-text {
+    color: #F6A224;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .get-started-btn {
+    background-color: #F6A224;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #d77e20;
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .get-started-btn {
+      font-size: 1.5rem;
+      padding: 16px 32px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .landingpage-content {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .get-started-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-container {
+      max-width: 90%;
+    }
+  
+    .get-started-btn {
+      width: 80%;
+    }
+  }
+  
+  .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('Images/FoOdS.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #content {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    border: solid 2px #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    width: calc(100% - 40px);
+    resize: vertical;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  button {
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #F6A224;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #d77e20;
+    transform: scale(1.05);
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #333;
+    width: 100%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #F6A224;
+    color: white;
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  ::placeholder {
+    color: #888;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    #content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    textarea {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    button {
+      width: 50%;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #content {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    textarea {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      width: 60%;
+      font-size: 0.9rem;
+    }
+  }
